@@ -149,7 +149,7 @@ body{
     margin: 50px 0px;
     background-color: white;
     padding: 20px 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,8 +170,8 @@ body{
 }
 .box{
     position: relative;
-    width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +314,7 @@ body{
     grid-area: title;
     color: darkred;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .footer-cont div {
@@ -350,8 +350,18 @@ body{
 #final {
     margin-top: 200px;
 }
+@media(max-width:1279px){
+    #dev-img{
+        height: 300px;
+    }
+}
+@media(max-width: 1025px){
+    
+    .curriculo img{
+        height: 400px;
+    }
 
-
+}
 @media(max-width: 900px){
     .menu-header{
         position: relative;
@@ -376,8 +386,66 @@ body{
     .lis{
         margin: 30px 0;
     }
-    #dev-img{
-        height: 250px;
        
+    
+    .curriculo img{
+        height: 300px;
     }
+    #dev-img{
+        height: 200px;
+    }
+}
+@media(max-width:769px){
+    .main-cont div{
+        display: flex;
+        flex-direction: column;
+    }
+    .curriculo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:481px){
+    .main-cont h1{
+        font-size: 2.5rem;
+    }
+    .projetos-cont h1{
+        font-size: 2.5rem;
+    }
+    .curriculo-cont h1{
+        font-size: 2.5rem;
+    }
+    #dev-img{
+        display: none;
+    }
+    .infos li{
+        font-size: 1rem;
+    }
+    .footer-cont h1{
+        font-size: 1.5rem;
+    }
+    .footer-cont div p{
+        font-size: .9rem;
+    }
+   
+    .box{
+        min-width: 250px;
+        min-height: 250px;
+    }
+    .box img{
+        height: 245px;
+    }
+    .main-cont p{
+        font-size: 1.5rem;
+        min-width: 300px;
+    }
+    .infos li{
+        margin: 20px 0;
+    }
+    .infos1{
+        color: darkred;
+    }
+
 }
